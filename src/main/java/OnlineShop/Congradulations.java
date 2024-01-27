@@ -6,7 +6,9 @@ import java.util.List;
 public class Congradulations {
     public void congratulateWithHolidays(List<Customer> customers) {
         LocalDate todayDate = LocalDate.now();
+
         Holiday holiday = Holiday.NONE;
+
         if (todayDate.getDayOfMonth() == 1 && todayDate.getMonthValue() == 1) {
             holiday = Holiday.NEW_YEAR;
         }
